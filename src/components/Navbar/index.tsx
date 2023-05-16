@@ -10,7 +10,7 @@ import {
   NavbarMobileArea,
 } from "./style";
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaLinkedin } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
@@ -23,6 +23,8 @@ export interface MenuButtonOpen {
 export const NavBar = (): JSX.Element => {
 
   const isWide = useMedia({ maxWidth: "991px" });
+
+  const linkedInUrl = `https://www.linkedin.com/in/jacquelinekajiya/`
 
   document.title = userData.nameUser;
 
@@ -37,7 +39,12 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText>{userData.nameUser}</LogoTipoText>
+            <LogoTipoText target="_blank" href={linkedInUrl}>
+              
+              {userData.nameUser}
+
+              <FaLinkedin style={{ marginLeft: "10px" }} />
+            </LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
