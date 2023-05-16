@@ -39,7 +39,7 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText target="_blank" href={linkedInUrl}>
+            <LogoTipoText as="a" target="_blank" href={linkedInUrl}>
               
               {userData.nameUser}
 
