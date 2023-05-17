@@ -8,8 +8,12 @@ Feel free to take a look and contact me, to work together or exchange ideas 😃
 Projeto de portfólio profissional, o qual contém informações sobre:
 
 ✔️ Informações para contato (currículo, LinkedIn, github, email)
+
 ✔️ Capacidades técnicas
+
 ✔️ Conhecimentos adicionais
+
 ✔️ Experiências
+
 ✔️ Principais projetos
   
